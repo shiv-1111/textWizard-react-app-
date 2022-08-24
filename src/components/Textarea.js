@@ -23,8 +23,7 @@ export default function Textarea(props) {
   }
 
   let handleCopy = () => {
-    text.select();
-    navigator.clipboard.writeText(text.value);
+    navigator.clipboard.writeText(text);
     props.handleAlert('Copied to clipboard!');
   }
   let handleSpacing = () => {
